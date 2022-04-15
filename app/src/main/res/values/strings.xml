@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">AppIMC</string>
-    <string name="calcule_o_seu_imc">Calcule o seu\n IMC</string>
-    
+    <string name="calcule_o_seu_imc"><font color="#64B6AC">Calcule o seu</font>\n<font color="#5D737E"><b>IMC</b></font></string>
+    <string name="description">Descubra como está sua saúde\ncom apenas dois valores.\nVamos lá?</string>
+    <string name="start">Começar</string>
 </resources>
