@@ -6,4 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ResultadoActivity">
 
+    <ImageView
+        android:id="@+id/seta"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/seta_direcional"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
