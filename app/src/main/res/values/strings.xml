@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AppIMC</string>
+    <string name="calcule_o_seu_imc">Calcule o seu\n IMC</string>
+    
 </resources>
