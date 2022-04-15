@@ -102,12 +102,49 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
+            android:textSize="20sp"
+            android:text="RESULTADO"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5D737E"/>
+
+        <TextView
+            android:text="Situação"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5D737E"/>
+
+        <TextView
+            android:id="@+id/situacao_textView"
+            tools:text="SAUDÁVEL"
+            android:textSize="36sp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#64B6AC"/>
+
+        <TextView
+            android:text="IMC"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5D737E"/>
+
+        <TextView
             android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#64B6AC"
             android:fontFamily="@font/montserrat_bold"
-            android:textSize="40sp"/>
+            android:textSize="36sp"
+            tools:text="10.0"/>
     </LinearLayout>
 
     <!-- <ImageView
