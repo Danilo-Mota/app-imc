@@ -25,18 +25,32 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/rounded_edittext"
-        android:gravity="right"
-        android:textColor="#64B6AC"
         android:fontFamily="@font/montserrat_medium"
-        android:hint="kg"
-        android:maxLines="1"
-        android:maxLength="4"
+        android:gravity="right"
         android:inputType="numberDecimal"
-        android:textColorHint="#64B6AC"
+        android:maxLength="4"
+        android:maxLines="1"
         android:paddingVertical="4dp"
-        android:paddingRight="10dp"
+        android:paddingRight="36dp"
+        android:text=""
+        android:textColor="#64B6AC"
+        android:textColorHint="#64B6AC"
         app:layout_constraintStart_toStartOf="@id/altura_editText"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/peso_hint_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kg"
+        android:gravity="right"
+        android:textSize="18sp"
+        android:paddingRight="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#64B6AC"
+        app:layout_constraintBottom_toBottomOf="@+id/peso_editText"
+        app:layout_constraintEnd_toEndOf="@+id/peso_editText"
+        app:layout_constraintTop_toTopOf="@+id/peso_editText" />
 
     <TextView
         android:id="@+id/altura_textView"
@@ -60,7 +74,6 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/rounded_edittext"
         android:gravity="right"
-        android:hint="m"
         android:maxLines="1"
         android:maxLength="4"
         android:inputType="numberDecimal"
@@ -68,10 +81,24 @@
         android:fontFamily="@font/montserrat_medium"
         android:textColorHint="#64B6AC"
         android:paddingVertical="4dp"
-        android:paddingRight="10dp"
+        android:paddingRight="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/altura_textView"
         app:layout_constraintTop_toBottomOf="@+id/peso_editText"/>
+
+    <TextView
+        android:id="@+id/altura_hint_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:text="m"
+        android:textColor="#64B6AC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/altura_editText"
+        app:layout_constraintEnd_toEndOf="@+id/altura_editText"
+        app:layout_constraintTop_toTopOf="@+id/altura_editText" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/calc_button"
