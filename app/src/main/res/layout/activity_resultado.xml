@@ -198,7 +198,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/imageView"
                 app:layout_constraintStart_toStartOf="@id/imageView"
-                android:text="0.0" />
+                android:text="VAZIO" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 

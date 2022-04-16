@@ -11,7 +11,8 @@
         android:theme="@style/Theme.AppIMC">
         <activity
             android:name=".ResultadoActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
