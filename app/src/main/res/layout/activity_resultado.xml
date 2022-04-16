@@ -148,7 +148,7 @@
 
         <TextView
             android:id="@+id/situacao_textView"
-            tools:text="SAUDÁVEL"
+            android:text="VAZIO"
             android:textSize="36sp"
             android:layout_marginBottom="40dp"
             android:fontFamily="@font/montserrat_bold"
@@ -164,14 +164,42 @@
             android:layout_height="wrap_content"
             android:textColor="#5D737E"/>
 
-        <TextView
-            android:id="@+id/result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#64B6AC"
-            android:fontFamily="@font/montserrat_bold"
-            android:textSize="36sp"
-            tools:text="10.0"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/levels"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/icon_levels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_levels"
+                app:layout_constraintBottom_toBottomOf="@id/imageView"
+                app:layout_constraintEnd_toEndOf="@id/imageView"
+                app:layout_constraintStart_toStartOf="@id/imageView"
+                app:layout_constraintTop_toTopOf="@id/imageView" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#64B6AC"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/imageView"
+                app:layout_constraintStart_toStartOf="@id/imageView"
+                android:text="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
     <!-- <ImageView
