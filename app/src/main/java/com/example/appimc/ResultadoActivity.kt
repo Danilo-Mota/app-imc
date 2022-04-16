@@ -37,7 +37,7 @@ class ResultadoActivity : AppCompatActivity() {
             resultadoText = findViewById(R.id.result)
 
             if (peso.isBlank() || altura.isBlank()) {
-                resultadoText.text = "VAZIO"
+                resultadoText.text = "..."
             } else {
                 calcular.set(peso.toFloat(), altura.toFloat())
                 val dec = DecimalFormat("0.0")
