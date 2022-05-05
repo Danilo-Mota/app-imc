@@ -1,7 +1,7 @@
 package com.example.appimc
 
 import java.math.BigDecimal
-import java.text.DecimalFormat
+import kotlin.math.pow
 
 class Imc {
     // Em kotlin, não é necessário criar os métodos get e set, pois são criados automaticamente pela linguagem Kotlin
@@ -14,8 +14,8 @@ class Imc {
         private set // nesse caso, o método set não será criado automaticamente, mas o método get será criado automaticamente
 
     fun calcularImc() {
-        imc = peso / Math.pow(altura, 2.0) // Calculo do IMC
-        var bd = BigDecimal(imc).setScale(1, BigDecimal.ROUND_HALF_EVEN) // Formatação do IMC
+        imc = peso / altura.pow(2.0) // Calculo do IMC
+        val bd = BigDecimal(imc).setScale(1, BigDecimal.ROUND_HALF_EVEN) // Formatação do IMC
         imc = bd.toDouble() // Inserido o valor formatado no atributo imc
     }
 }
