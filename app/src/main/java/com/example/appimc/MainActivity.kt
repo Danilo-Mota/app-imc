@@ -10,15 +10,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         comecar()
     }
 
     private fun comecar(){
         val comecar = findViewById<MaterialButton>(R.id.button)
-        val irParaResultadoActivity = Intent(this, ResultadoActivity::class.java)
+        val irParaResultadoActivity = Intent(this, ResultadoActivity::class.java) // cria um intent para a proxima activity
 
         comecar.setOnClickListener {
-            startActivity(irParaResultadoActivity)
+            startActivity(irParaResultadoActivity) // inicia a activity
         }
     }
 }
